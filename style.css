@@ -1,0 +1,233 @@
+/* ===== Variables ===== */
+:root {
+    --text-body: #ab967f;
+    --text-link: #839a00;
+    --text-link-active: #1f1005;
+    --text-link-2: #b4b4b4;
+}
+
+/* ===== Global ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ===== Classess ===== */
+
+.container {
+    max-width: 972px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.header {
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    margin-top: 24px;
+}
+
+.navbar__logo-img {
+    width: 228px;
+}
+
+.navbar__list {
+    margin-top: 54px;
+    display: flex;
+}
+
+.navbar__link {
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    color: var(--text-link);
+}
+
+.navbar__link.active {
+    color: var(--text-link-active);
+    background: url(images/interface.png) no-repeat  0 -522px;
+}
+
+/* ===== Banner ===== */
+.banner {
+    position: relative;
+    margin-top: 10px;
+    background: url(images/babytree.jpg) no-repeat center; 
+    height: 578px;
+}
+
+.banner::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 243px;
+    bottom: -80px;
+    left: 0;
+    background: url(images/bg-grass.png) no-repeat center;
+    z-index: 2;
+}
+
+.banner__container {
+    position: relative;
+}
+
+.banner__box {
+    position: absolute;
+    right: 20px;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    z-index: 10;
+}
+
+.banner__subscribe {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background: url(images/interface.png) no-repeat 0 -584px;
+    display: grid;
+    place-items: center;
+    color: var(--text-link-active);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.banner__list {
+    text-align: right;
+    width: 100%;
+}
+
+.banner__link {
+    display: inline-block;
+    color: var(--text-link-2);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-right: 40px;
+    background: url(images/interface.png) no-repeat 270px 10px;
+}
+
+.banner__link:hover {
+    text-decoration: underline;
+    color: var(--text-link);
+}
+
+/* ===== Welcome ===== */
+.welcome {
+    background: url(images/bg-soil.jpg) repeat;
+}
+
+.welcome__container {
+    position: relative;
+    padding-block: 60px;
+    display: grid;
+    grid-template-columns: 600px 300px;
+    column-gap: 20px;
+}
+
+.welcome__box {
+    position: absolute;
+    width: 162px;
+    height: 90px;
+    background: url(images/interface.png) no-repeat 0 -415px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+}
+
+.welcome__box-text {
+    margin-top: 40px;
+    color: var(--text-link-active);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.welcome__content {
+    background: url(images/bg-content.png);
+    padding: 55px 20px;
+    border-radius: 10px;
+    color: var(--text-body);
+}
+
+.welcome__content p {
+    word-spacing: 5px;
+    font-size: 1rem;
+}
+.welcome__content p:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.welcome__title {
+    font-size: 1.25rem;
+    color: #daec18;
+    margin-bottom: 20px;
+}
+
+.welcome__card {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.salad {
+    background: url(images/fruitsalad.png) no-repeat;
+}
+
+.apples {
+    background: url(images/bakeapples.png) no-repeat;
+}
+
+.welcome__card-content {
+    width: 50%;
+}
+
+.welcome__card-name {
+    font-size: 1rem;
+    color: #ff5400;
+    margin-bottom: 1rem;
+}
+
+.welcome__card-description {
+    font-size: .85rem;
+    color: var(--text-link);
+}
+
+.footer {
+background-color: #3c2714;
+text-align: center;
+padding-block: 20px;
+color: var(--text-body);
+}
